@@ -1,6 +1,10 @@
 # game-arena
 BSADD Game Arena
 
+A gaming platform where bots fight with each other
+
+# Target
+We would like to host the next BOT Contest on our own platform.
 
 
 # Reading Materials
