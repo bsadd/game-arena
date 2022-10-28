@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    username: XXX #will be dynamically loaded from DbHelper
+    password: XXX #will be dynamically loaded from DbHelper
+    url: XXX #will be dynamically loaded from DbHelper
+    driver-class-name: org.testcontainers.jdbc.ContainerDatabaseDriver

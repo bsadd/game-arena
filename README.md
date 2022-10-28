@@ -15,3 +15,4 @@ We would like to host the next BOT Contest on our own platform.
 2. [Docker crash course](https://www.youtube.com/watch?list=PL4cUxeGkcC9hxjeEtdHFNYMtCpjNBm3h7)
 3. [Awesome Docker](https://github.com/veggiemonk/awesome-docker): Useful list of resources for learning and working with Docker
 
+
