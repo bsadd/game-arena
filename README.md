@@ -16,3 +16,10 @@ We would like to host the next BOT Contest on our own platform.
 3. [Awesome Docker](https://github.com/veggiemonk/awesome-docker): Useful list of resources for learning and working with Docker
 
 
+# Installations
+
+## Prerequisites
+1. Install Git
+2. Install Maven
+3. Install jdk17
+4. Install docker (needed for test containers)
