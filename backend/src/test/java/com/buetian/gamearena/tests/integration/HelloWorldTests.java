@@ -16,6 +16,7 @@ import static org.springframework.security.test.web.servlet.request.SecurityMock
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
@@ -34,6 +35,19 @@ class HelloWorldTests extends DBHelper {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().string(containsString("Hello, World")));
+    }
+
+    @Test
+    public void listCountries() throws Exception {
+        resetDbCoreapp();
+        this.mockMvc
+                .perform(get("/countries").with(user("user")))
+                .andDo(print())
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.countries.length()").value(2))
+                .andExpect(jsonPath("$.countries[1].id").value(2))
+                .andExpect(jsonPath("$.countries[1].code").value("bd"))
+                .andExpect(jsonPath("$.countries[1].name").value("Bangladesh"));
     }
 
 }
