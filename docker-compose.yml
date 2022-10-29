@@ -32,8 +32,8 @@ services:
     image: mysql/mysql-server:8.0
     volumes:
       - "mysql-data:/var/lib/mysql"
-      - "./backend/src/test/resources/schema.sql:/docker-entrypoint-initdb.d/1.sql"
-      - "./backend/src/test/resources/data.sql:/docker-entrypoint-initdb.d/2.sql"
+      - "./backend/src/test/resources/db/coreapp/schema.sql:/docker-entrypoint-initdb.d/1.sql"
+      - "./backend/src/test/resources/db/coreapp/data.sql:/docker-entrypoint-initdb.d/2.sql"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: coreapp
