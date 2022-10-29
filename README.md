@@ -22,7 +22,7 @@ We would like to host the next BOT Contest on our own platform.
 ```shell
 make docker-compose
 ```
-3. Go to localhost:8080 and see the project running.
+3. Go to http://localhost:8080/countries and see the project running.
 
 Things to remember: 
 * Port 8080 may be locked by other application, then you need to either close that application, or change ports for this application
