@@ -28,3 +28,6 @@ target/*
 *.iml
 mvnw
 mvnw.cmd
+
+# VS code file
+hello-world-task.code-workspace
